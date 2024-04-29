@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+  <head>
+  <title>Home - Book Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="/postrequest.js"></script>
+    <script src="/getrequest.js"></script>
+</head>
+  <body>
+   	<div id="postResult">
+   		<div class="container">
+   			<h2>FORM</h2>
+   			
+   			  <form id="bookForm" action="">
+				  <div class="form-group">
+				    <label for="bookId">Book Id :</label>
+				    <input type="text" class="form-control" id="bookIds" name="bookId" placeholder="Enter Book Id">
+				  </div>
+				  <div class="form-group">
+				    <label for="bookName">Book Name:</label>
+				    <input type="text" class="form-control" id="bookName" name="bookName" placeholder="Enter Book Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="author">Author :</label>
+				    <input type="text" class="form-control" id="author" name="author" placeholder="Enter Author Name">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<br>
+				<div class="col-sm-7" style="margin:20px 0px 20px 0px">
+					<button id="getAllBooks" type="button" class="btn btn-primary">Get All Books</button>
+					<div id="getResult" style="padding: 20px 10px 20px 50px">
+						<ul class="list-group">
+						
+						</ul>
+					</div>
+				</div>
+   		</div>
+   	</div>
+  </body>
+</html>
